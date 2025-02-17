@@ -1,7 +1,7 @@
-import React from 'react';
-import app from '/images/loyalityCard/App .jpg';
-import { motion, useInView } from 'framer-motion';
-import backgroundImage from '/images/homebg/loyality2.jpg';
+import React from "react";
+import app from "/images/loyalityCard/App .jpg";
+import { motion, useInView } from "framer-motion";
+import backgroundImage from "/images/homebg/loyality2.jpg";
 
 const LoyalitySection = () => {
   const imgRef = React.useRef(null);
@@ -10,7 +10,7 @@ const LoyalitySection = () => {
   // Add margin to trigger animations slightly before elements come into view
   const inViewOptions = {
     once: true,
-    margin: '-100px 0px',
+    margin: "-100px 0px",
   };
   const isImgInView = useInView(imgRef, inViewOptions);
 
@@ -45,9 +45,9 @@ const LoyalitySection = () => {
       className="flex h-full flex-col md:flex-row items-center justify-between  text-white"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover', // Adjust to 'contain' if you want the full image visible
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundSize: "cover", // Adjust to 'contain' if you want the full image visible
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <motion.img
@@ -57,7 +57,7 @@ const LoyalitySection = () => {
         alt="App Screenshot"
         variants={fadeInScale}
         initial="hidden"
-        animate={isImgInView ? 'visible' : 'hidden'}
+        animate={isImgInView ? "visible" : "hidden"}
       />
 
       <motion.div
@@ -65,11 +65,11 @@ const LoyalitySection = () => {
         className="w-full  md:w-1/2 text-black flex flex-col items-center mt-2 p-6 md:p-6 md:mx-12 lg:mx-2 mb-10"
         variants={fadeInUp}
         initial="hidden"
-        animate={isTextInView ? 'visible' : 'hidden'}
+        animate={isTextInView ? "visible" : "hidden"}
       >
         <p className="text-center sm:text-lg text-xl">
-          Explore a new way for shopping encouraging with{' '}
-          <b> Ahlan Medina...</b>
+          Explore a new way for shopping encouraging with{" "}
+          <b> Ahlan Madina...</b>
           designed to bring all the personalized perks of our loyalty program
           right at your fingertips…
         </p>
