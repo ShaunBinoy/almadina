@@ -34,9 +34,16 @@ export default function AboutPage() {
       viewport={{ once: true, amount: 0.3 }}
     >
       {/* Background with fade effect */}
-      <motion.div
+      {/* <motion.div
         style={{ backgroundImage: `url(${img1})` }}
         className="absolute inset-0 bg-cover bg-center z-0"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.5 }}
+        transition={{ duration: 1 }}
+      /> */}
+      <motion.div
+        style={{ backgroundColor: "rgb(243 244 246)" }} // Tailwind's gray-100
+        className="absolute inset-0 z-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1 }}

@@ -33,17 +33,17 @@ const ExclusiveDeals = () => {
 
   return (
     <motion.div
-      className="bg-slate-100 w-full p-18 sm:p-12"
+      className="bg-gray-200 w-full p-18 sm:p-12"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       variants={containerVariants}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover', // Adjust to 'contain' if you want the full image visible
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      // style={{
+      //   backgroundImage: `url(${backgroundImage})`,
+      //   backgroundSize: 'cover', // Adjust to 'contain' if you want the full image visible
+      //   backgroundPosition: 'center',
+      //   backgroundRepeat: 'no-repeat',
+      // }}
     >
       <motion.div className="flex items-center flex-col h-auto md:flex-row">
         <motion.div

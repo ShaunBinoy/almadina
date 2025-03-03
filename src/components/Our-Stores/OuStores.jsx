@@ -39,7 +39,7 @@ export default function StoreLocations() {
       variants={containerVariants}
     >
       {/* Background Image Container */}
-      <div
+      {/* <div
         className="absolute inset-0 w-full h-full overflow-hidden"
         style={{
           backgroundImage: `url(${backgroundImage})`,
@@ -47,7 +47,7 @@ export default function StoreLocations() {
           backgroundPosition: "center",
           opacity: 0.6, // Adjust this value between 0 and 1 to control opacity
         }}
-      />
+      /> */}
 
       {/* Content Container with backdrop-filter for better readability */}
       <div className="relative z-10 max-w-6xl gap-18 md:gap-28 mx-auto flex flex-col lg:flex-row">

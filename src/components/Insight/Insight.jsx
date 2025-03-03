@@ -40,12 +40,12 @@ const Insight = () => {
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       variants={containerVariants}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover', // Adjust to 'contain' if you want the full image visible
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      // style={{
+      //   backgroundImage: `url(${backgroundImage})`,
+      //   backgroundSize: 'cover', // Adjust to 'contain' if you want the full image visible
+      //   backgroundPosition: 'center',
+      //   backgroundRepeat: 'no-repeat',
+      // }}
     >
       <motion.div
         className="w-full lg:w-2/5 flex flex-col justify-center items-center text-center lg:text-left lg:items-start"

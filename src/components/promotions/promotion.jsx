@@ -25,7 +25,7 @@ export default function Promotions() {
   return (
     <div
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundColor: 'rgb(229 231 235)',
         backgroundSize: 'cover', // Adjust to 'contain' if you want the full image visible
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

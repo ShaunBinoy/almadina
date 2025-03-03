@@ -122,12 +122,12 @@ export default function Features() {
   return (
     <motion.div
       className="relative flex bg-slate-100 h-[70vh] flex-col lg:flex-row items-center pt-6 w-full overflow-hidden pl-14 sm:pl-20 pr-12"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover", // Adjust to 'contain' if you want the full image visible
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      // style={{
+      //   backgroundImage: `url(${backgroundImage})`,
+      //   backgroundSize: "cover", // Adjust to 'contain' if you want the full image visible
+      //   backgroundPosition: "center",
+      //   backgroundRepeat: "no-repeat",
+      // }}
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

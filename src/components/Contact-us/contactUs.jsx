@@ -1,13 +1,13 @@
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
-import img1 from '/images/For Home Page section.jpeg';
-import './contactUs.css';
-import AnimatedSection from '../animated/section';
-import backgroundImage from '/images/backgroundImagecontactus2.jpg'; // Add your background image import
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import img1 from "/images/For Home Page section.jpeg";
+import "./contactUs.css";
+import AnimatedSection from "../animated/section";
+import backgroundImage from "/images/backgroundImagecontactus2.jpg"; // Add your background image import
 
 export default function ContactUs() {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, margin: '-10%' });
+  const isInView = useInView(containerRef, { once: true, margin: "-10%" });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -58,7 +58,7 @@ export default function ContactUs() {
       scale: 1.05,
       transition: {
         duration: 0.2,
-        ease: 'easeInOut',
+        ease: "easeInOut",
       },
     },
   };
@@ -66,17 +66,19 @@ export default function ContactUs() {
   return (
     <AnimatedSection className="w-full relative bg-white sm:p-12 p-14 ">
       {/* Background Image */}
-      <div
+      {/* <div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
-      />
+      /> */}
+      <div className="absolute inset-0 z-0 bg-gray-400 opacity-20" />
+
       <motion.div
         ref={containerRef}
         variants={containerVariants}
         initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
+        animate={isInView ? "visible" : "hidden"}
         className=" flex flex-col md:flex-row w-full justify-evenly"
       >
         {/* Content Container */}
