@@ -4,7 +4,7 @@ import AboutPage from "../components/About/about";
 import ContactUs from "../components/Contact-us/contactUs";
 import Features from "../components/Features/features";
 import HomePage from "../components/Home/home";
-import StoreLocations from "../components/Our-branches/OurBranches";
+import StoreLocations from "../components/Our-Branches/OurBranches";
 import Promotions from "../components/promotions/promotion";
 import Insight from "../components/Insight/Insight";
 import ExclusiveDeals from "../components/ExclusiveDeals/ExclusiveDeals";
